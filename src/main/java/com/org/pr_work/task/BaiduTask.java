@@ -30,7 +30,7 @@ public class BaiduTask {
      * 获取 当前文档数目，昨日收益，下载量
      * 删除上传失败的文档
      */
-    @Scheduled(fixedRate = 60 * 60 * 1000)
+    @Scheduled(fixedRate = 120 * 60 * 1000)
     public void taskGetFilesNumber() {
         log.info(bdService.getFilesNumber());
     }
