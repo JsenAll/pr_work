@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>任务列表</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #ccc;
+            text-align: left;
+        }
+        th {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<h1>当前任务列表</h1>
+
+<label for="filterInput">过滤任务:</label>
+<input type="text" id="filterInput" placeholder="输入任务名称">
+
+<label for="sortOptions">选择排序项:</label>
+<select id="sortOptions">
+    <option value="name">任务名称</option>
+    <option value="date">日期</option>
+</select>
+
+<table id="taskTable">
+    <thead>
+    <tr>
+        <th onclick="sortTable('name')">任务名称</th>
+        <th onclick="sortTable('date')">日期</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>任务1.1</td>
+        <td>2025-02-20</td>
+    </tr>
+    <tr>
+        <td>任务1.2</td>
+        <td>2025-02-22</td>
+    </tr>
+
+    <tr>
+        <td>任务1.3</td>
+        <td>2025-02-19</td>
+    </tr>
+    <tr>
+        <td>任务2</td>
+        <td>2025-02-18</td>
+    </tr>
+    <tr>
+        <td>任务3</td>
+        <td>2025-02-22</td>
+    </tr>
+    </tbody>
+</table>
+
+<script>
+    function sortTable(type) {
+        const table = document.getElementById("taskTable");
+        const rows = Array.from(table.rows).slice(1); // 获取所有行
+        const sortFunction = type === 'name' ?
+            (a, b) => a.cells[0].innerText.localeCompare(b.cells[0].innerText) :
+            (a, b) => new Date(a.cells[1].innerText) - new Date(b.cells[1].innerText);
+
+        rows.sort(sortFunction);
+        rows.forEach(row => table.appendChild(row)); // 将排序后的行添加回表格
+    }
+
+    function filterTable() {
+        const input = document.getElementById('filterInput');
+        const filter = input.value.toUpperCase();
+        const table = document.getElementById('taskTable');
+        const rows = table.getElementsByTagName('tr');
+
+        for (let i = 1; i < rows.length; i++) {
+            const td = rows[i].getElementsByTagName('td')[0];
+            if (td) {
+                const txtValue = td.textContent || td.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    rows[i].style.display = '';
+                } else {
+                    rows[i].style.display = 'none';
+                }
+            }
+        }
+    }
+
+    document.getElementById('sortOptions').addEventListener('change', function() {
+        sortTable(this.value);
+    });
+
+    document.getElementById('filterInput').addEventListener('keyup', filterTable);
+</script>
+
+</body>
+</html>

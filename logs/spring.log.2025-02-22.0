@@ -1,0 +1,144 @@
+2025-02-22 00:05:40.315  INFO 61549 --- [scheduling-1] com.org.pr_work.task.BaiduTask           : {"num":4616,"name":"全部","class":-1}
+2025-02-22 01:05:40.312  INFO 61549 --- [scheduling-1] com.org.pr_work.task.BaiduTask           : {"num":4616,"name":"全部","class":-1}
+2025-02-22 01:05:40.481  INFO 61549 --- [scheduling-1] com.org.pr_work.service.BDService        : query_list: i=10;status=200;
+2025-02-22 01:05:50.646  INFO 61549 --- [scheduling-1] com.org.pr_work.service.BDService        : query_list: i=9;status=200;
+2025-02-22 01:06:00.829  INFO 61549 --- [scheduling-1] com.org.pr_work.service.BDService        : query_list: i=8;status=200;
+2025-02-22 01:06:10.948  INFO 61549 --- [scheduling-1] com.org.pr_work.service.BDService        : query_list: i=7;status=200;
+2025-02-22 01:06:21.085  INFO 61549 --- [scheduling-1] com.org.pr_work.service.BDService        : query_list: i=6;status=200;
+2025-02-22 01:06:31.211  INFO 61549 --- [scheduling-1] com.org.pr_work.service.BDService        : query_list: i=5;status=200;
+2025-02-22 01:06:41.349  INFO 61549 --- [scheduling-1] com.org.pr_work.service.BDService        : query_list: i=4;status=200;
+2025-02-22 01:06:51.476  INFO 61549 --- [scheduling-1] com.org.pr_work.service.BDService        : query_list: i=3;status=200;
+2025-02-22 01:07:01.601  INFO 61549 --- [scheduling-1] com.org.pr_work.service.BDService        : query_list: i=2;status=200;
+2025-02-22 01:07:02.612  INFO 61549 --- [scheduling-1] com.org.pr_work.service.BDService        : 2    8.1食物中能量的释放 教案-2024--2025学年北师大版生物七年级下册 (1)----------------------------- 806607ee29f90242a8956bec0975f46526d3a77d
+2025-02-22 01:07:02.775  WARN 61549 --- [scheduling-1] o.a.h.c.protocol.ResponseProcessCookies  : Invalid cookie header: "Set-Cookie: BAIDUID_BFESS=2D8CFBAE7D672730A2D03FF50BA53BB7:FG=1; Path=/; Domain=baidu.com; Expires=Sat, 21 Feb 2026 17:07:02 GMT; Max-Age=31536000; Secure; SameSite=None". Invalid 'expires' attribute: Sat, 21 Feb 2026 17:07:02 GMT
+2025-02-22 01:07:02.776  INFO 61549 --- [scheduling-1] com.org.pr_work.service.BDService        : deleteDoc:200{"error_no":"0"}
+2025-02-22 01:07:08.784  INFO 61549 --- [scheduling-1] com.org.pr_work.service.BDService        : 2    6.1力  同步习题 2024-2025学年鲁科版(五四学制)(2024)物理八年级下册----------------------------- e3e180f132126edb6f1aff00bed5b9f3f80f72fc
+2025-02-22 01:07:08.960  WARN 61549 --- [scheduling-1] o.a.h.c.protocol.ResponseProcessCookies  : Invalid cookie header: "Set-Cookie: BAIDUID_BFESS=FE5C97628B288CE751B6D3B843F9C10D:FG=1; Path=/; Domain=baidu.com; Expires=Sat, 21 Feb 2026 17:07:09 GMT; Max-Age=31536000; Secure; SameSite=None". Invalid 'expires' attribute: Sat, 21 Feb 2026 17:07:09 GMT
+2025-02-22 01:07:08.961  INFO 61549 --- [scheduling-1] com.org.pr_work.service.BDService        : deleteDoc:200{"error_no":"0"}
+2025-02-22 01:07:24.106  INFO 61549 --- [scheduling-1] com.org.pr_work.service.BDService        : query_list: i=1;status=200;
+2025-02-22 01:07:25.114  INFO 61549 --- [scheduling-1] com.org.pr_work.service.BDService        : 1    17.1勾股定理 课时作业2024—2025学年人教版数学八年级下册 ----------------------------- 7c254a281ae8b8f67c1cfad6195f312b3069eb36
+2025-02-22 01:07:25.282  WARN 61549 --- [scheduling-1] o.a.h.c.protocol.ResponseProcessCookies  : Invalid cookie header: "Set-Cookie: BAIDUID_BFESS=33825C53C8E64FC449C21FE6409DBC11:FG=1; Path=/; Domain=baidu.com; Expires=Sat, 21 Feb 2026 17:07:25 GMT; Max-Age=31536000; Secure; SameSite=None". Invalid 'expires' attribute: Sat, 21 Feb 2026 17:07:25 GMT
+2025-02-22 01:07:25.282  INFO 61549 --- [scheduling-1] com.org.pr_work.service.BDService        : deleteDoc:200{"error_no":"0"}
+2025-02-22 01:07:40.455  INFO 61549 --- [scheduling-1] com.org.pr_work.service.BDService        : query_list: i=0;status=200;
+2025-02-22 01:07:41.455  INFO 61549 --- [scheduling-1] com.org.pr_work.service.BDService        : 0    2025中考数学一轮复习 专题15 三角形及全等三角形----------------------------- 9d4e8a1287254b35eefdc8d376eeaeaad0f31655
+2025-02-22 01:07:41.632  WARN 61549 --- [scheduling-1] o.a.h.c.protocol.ResponseProcessCookies  : Invalid cookie header: "Set-Cookie: BAIDUID_BFESS=FF7A8BE8E28545A0F8CD2B62127B4833:FG=1; Path=/; Domain=baidu.com; Expires=Sat, 21 Feb 2026 17:07:41 GMT; Max-Age=31536000; Secure; SameSite=None". Invalid 'expires' attribute: Sat, 21 Feb 2026 17:07:41 GMT
+2025-02-22 01:07:41.632  INFO 61549 --- [scheduling-1] com.org.pr_work.service.BDService        : deleteDoc:200{"error_no":"0"}
+2025-02-22 01:07:56.623  INFO 61549 --- [scheduling-1] com.org.pr_work.task.BaiduTask           : BaiduTask:删除上传失败的文档
+2025-02-22 02:05:40.322  INFO 61549 --- [scheduling-1] com.org.pr_work.task.BaiduTask           : {"num":4614,"name":"全部","class":-1}
+2025-02-22 03:05:40.404  INFO 61549 --- [scheduling-1] com.org.pr_work.task.BaiduTask           : {"num":4613,"name":"全部","class":-1}
+2025-02-22 04:05:40.412  INFO 61549 --- [scheduling-1] com.org.pr_work.task.BaiduTask           : {"num":4614,"name":"全部","class":-1}
+2025-02-22 05:05:40.536  INFO 61549 --- [scheduling-1] com.org.pr_work.task.BaiduTask           : {"num":4614,"name":"全部","class":-1}
+2025-02-22 06:05:40.479  INFO 61549 --- [scheduling-1] com.org.pr_work.task.BaiduTask           : {"num":4614,"name":"全部","class":-1}
+2025-02-22 07:05:40.451  INFO 61549 --- [scheduling-1] com.org.pr_work.task.BaiduTask           : {"num":4616,"name":"全部","class":-1}
+2025-02-22 07:05:40.599  INFO 61549 --- [scheduling-1] com.org.pr_work.service.BDService        : query_list: i=10;status=200;
+2025-02-22 07:05:50.758  INFO 61549 --- [scheduling-1] com.org.pr_work.service.BDService        : query_list: i=9;status=200;
+2025-02-22 07:06:00.928  INFO 61549 --- [scheduling-1] com.org.pr_work.service.BDService        : query_list: i=8;status=200;
+2025-02-22 07:06:11.089  INFO 61549 --- [scheduling-1] com.org.pr_work.service.BDService        : query_list: i=7;status=200;
+2025-02-22 07:06:21.303  INFO 61549 --- [scheduling-1] com.org.pr_work.service.BDService        : query_list: i=6;status=200;
+2025-02-22 07:06:31.429  INFO 61549 --- [scheduling-1] com.org.pr_work.service.BDService        : query_list: i=5;status=200;
+2025-02-22 07:06:41.578  INFO 61549 --- [scheduling-1] com.org.pr_work.service.BDService        : query_list: i=4;status=200;
+2025-02-22 07:06:51.720  INFO 61549 --- [scheduling-1] com.org.pr_work.service.BDService        : query_list: i=3;status=200;
+2025-02-22 07:07:01.854  INFO 61549 --- [scheduling-1] com.org.pr_work.service.BDService        : query_list: i=2;status=200;
+2025-02-22 07:07:11.992  INFO 61549 --- [scheduling-1] com.org.pr_work.service.BDService        : query_list: i=1;status=200;
+2025-02-22 07:07:22.130  INFO 61549 --- [scheduling-1] com.org.pr_work.service.BDService        : query_list: i=0;status=200;
+2025-02-22 07:07:32.131  INFO 61549 --- [scheduling-1] com.org.pr_work.task.BaiduTask           : BaiduTask:删除上传失败的文档
+2025-02-22 08:05:40.459  INFO 61549 --- [scheduling-1] com.org.pr_work.task.BaiduTask           : {"num":4615,"name":"全部","class":-1}
+2025-02-22 09:05:40.409  INFO 61549 --- [scheduling-1] com.org.pr_work.task.BaiduTask           : {"num":4613,"name":"全部","class":-1}
+2025-02-22 10:05:40.493  INFO 61549 --- [scheduling-1] com.org.pr_work.task.BaiduTask           : {"num":4614,"name":"全部","class":-1}
+2025-02-22 11:05:40.635  INFO 61549 --- [scheduling-1] com.org.pr_work.task.BaiduTask           : {"num":4615,"name":"全部","class":-1}
+2025-02-22 12:05:40.354  INFO 61549 --- [scheduling-1] com.org.pr_work.task.BaiduTask           : {"num":4616,"name":"全部","class":-1}
+2025-02-22 13:05:40.513  INFO 61549 --- [scheduling-1] com.org.pr_work.task.BaiduTask           : {"num":4616,"name":"全部","class":-1}
+2025-02-22 13:05:40.652  INFO 61549 --- [scheduling-1] com.org.pr_work.service.BDService        : query_list: i=10;status=200;
+2025-02-22 13:05:50.781  INFO 61549 --- [scheduling-1] com.org.pr_work.service.BDService        : query_list: i=9;status=200;
+2025-02-22 13:06:00.931  INFO 61549 --- [scheduling-1] com.org.pr_work.service.BDService        : query_list: i=8;status=200;
+2025-02-22 13:06:11.069  INFO 61549 --- [scheduling-1] com.org.pr_work.service.BDService        : query_list: i=7;status=200;
+2025-02-22 13:06:21.207  INFO 61549 --- [scheduling-1] com.org.pr_work.service.BDService        : query_list: i=6;status=200;
+2025-02-22 13:06:31.339  INFO 61549 --- [scheduling-1] com.org.pr_work.service.BDService        : query_list: i=5;status=200;
+2025-02-22 13:06:41.484  INFO 61549 --- [scheduling-1] com.org.pr_work.service.BDService        : query_list: i=4;status=200;
+2025-02-22 13:06:42.494  INFO 61549 --- [scheduling-1] com.org.pr_work.service.BDService        : 4    第7章 力与运动 练习题2024-2025学年物理沪科版(2024)八年级全一册----------------------------- 1110cd08d938376baf1ffc4ffe4733687f21fc65
+2025-02-22 13:06:42.666  WARN 61549 --- [scheduling-1] o.a.h.c.protocol.ResponseProcessCookies  : Invalid cookie header: "Set-Cookie: BAIDUID_BFESS=9A9C9CD371E418C4B149BFE6DFD5CCC2:FG=1; Path=/; Domain=baidu.com; Expires=Sun, 22 Feb 2026 05:06:42 GMT; Max-Age=31536000; Secure; SameSite=None". Invalid 'expires' attribute: Sun, 22 Feb 2026 05:06:42 GMT
+2025-02-22 13:06:42.667  INFO 61549 --- [scheduling-1] com.org.pr_work.service.BDService        : deleteDoc:200{"error_no":"0"}
+2025-02-22 13:06:48.680  INFO 61549 --- [scheduling-1] com.org.pr_work.service.BDService        : 4    9.4 跨学科实践：制作简易活塞式抽水机   ----2024-2025学年人教版物理八年级下学期----------------------------- 4ada894bcf22bcd126fff705cc17552707225ea5
+2025-02-22 13:06:48.853  WARN 61549 --- [scheduling-1] o.a.h.c.protocol.ResponseProcessCookies  : Invalid cookie header: "Set-Cookie: BAIDUID_BFESS=4E7C65B4EFDF80E30E8C27B746A5F62E:FG=1; Path=/; Domain=baidu.com; Expires=Sun, 22 Feb 2026 05:06:48 GMT; Max-Age=31536000; Secure; SameSite=None". Invalid 'expires' attribute: Sun, 22 Feb 2026 05:06:48 GMT
+2025-02-22 13:06:48.853  INFO 61549 --- [scheduling-1] com.org.pr_work.service.BDService        : deleteDoc:200{"error_no":"0"}
+2025-02-22 13:07:03.993  INFO 61549 --- [scheduling-1] com.org.pr_work.service.BDService        : query_list: i=3;status=200;
+2025-02-22 13:07:05.000  INFO 61549 --- [scheduling-1] com.org.pr_work.service.BDService        : 3    2025年中考复习物理专项练习：动态电路的分析与计算 (1)----------------------------- 4ffcb94672fe910ef12d2af90242a8956aecaa08
+2025-02-22 13:07:05.188  WARN 61549 --- [scheduling-1] o.a.h.c.protocol.ResponseProcessCookies  : Invalid cookie header: "Set-Cookie: BAIDUID_BFESS=3431DDE61F45054A2924DD6D0962E0D2:FG=1; Path=/; Domain=baidu.com; Expires=Sun, 22 Feb 2026 05:07:05 GMT; Max-Age=31536000; Secure; SameSite=None". Invalid 'expires' attribute: Sun, 22 Feb 2026 05:07:05 GMT
+2025-02-22 13:07:05.188  INFO 61549 --- [scheduling-1] com.org.pr_work.service.BDService        : deleteDoc:200{"error_no":"0"}
+2025-02-22 13:07:20.370  INFO 61549 --- [scheduling-1] com.org.pr_work.service.BDService        : query_list: i=2;status=200;
+2025-02-22 13:07:21.374  INFO 61549 --- [scheduling-1] com.org.pr_work.service.BDService        : 2    第六章 质量和密度单元测试--2024-2025学年北师大版物理八年级下学期----------------------------- 36d995e05bfb770bf78a6529647d27284a73370a
+2025-02-22 13:07:21.547  WARN 61549 --- [scheduling-1] o.a.h.c.protocol.ResponseProcessCookies  : Invalid cookie header: "Set-Cookie: BAIDUID_BFESS=DF4396C2E774CCF3ACA500BBDA44429B:FG=1; Path=/; Domain=baidu.com; Expires=Sun, 22 Feb 2026 05:07:21 GMT; Max-Age=31536000; Secure; SameSite=None". Invalid 'expires' attribute: Sun, 22 Feb 2026 05:07:21 GMT
+2025-02-22 13:07:21.548  INFO 61549 --- [scheduling-1] com.org.pr_work.service.BDService        : deleteDoc:200{"error_no":"0"}
+2025-02-22 13:07:36.684  INFO 61549 --- [scheduling-1] com.org.pr_work.service.BDService        : query_list: i=1;status=200;
+2025-02-22 13:07:46.820  INFO 61549 --- [scheduling-1] com.org.pr_work.service.BDService        : query_list: i=0;status=200;
+2025-02-22 13:07:47.830  INFO 61549 --- [scheduling-1] com.org.pr_work.service.BDService        : 0    第五章透镜及其应用单元练习2024-2025学年北师大版物理八年级上册----------------------------- 5a271465b3717fd5360cba1aa8114431b80d8ecc
+2025-02-22 13:07:47.987  WARN 61549 --- [scheduling-1] o.a.h.c.protocol.ResponseProcessCookies  : Invalid cookie header: "Set-Cookie: BAIDUID_BFESS=D167E111CCF802FA7779DB9DD03E0096:FG=1; Path=/; Domain=baidu.com; Expires=Sun, 22 Feb 2026 05:07:48 GMT; Max-Age=31536000; Secure; SameSite=None". Invalid 'expires' attribute: Sun, 22 Feb 2026 05:07:48 GMT
+2025-02-22 13:07:47.987  INFO 61549 --- [scheduling-1] com.org.pr_work.service.BDService        : deleteDoc:200{"error_no":"0"}
+2025-02-22 13:07:53.993  INFO 61549 --- [scheduling-1] com.org.pr_work.service.BDService        : 0    广东省佛山市南海区2024-2025学年八年级上学期期末监测物理试卷----------------------------- d1ea9300b84cf7ec4afe04a1b0717fd5370cb2cc
+2025-02-22 13:07:54.155  WARN 61549 --- [scheduling-1] o.a.h.c.protocol.ResponseProcessCookies  : Invalid cookie header: "Set-Cookie: BAIDUID_BFESS=43FFA562C84FE5CEB295BA7EC155E202:FG=1; Path=/; Domain=baidu.com; Expires=Sun, 22 Feb 2026 05:07:54 GMT; Max-Age=31536000; Secure; SameSite=None". Invalid 'expires' attribute: Sun, 22 Feb 2026 05:07:54 GMT
+2025-02-22 13:07:54.156  INFO 61549 --- [scheduling-1] com.org.pr_work.service.BDService        : deleteDoc:200{"error_no":"0"}
+2025-02-22 13:08:09.199  INFO 61549 --- [scheduling-1] com.org.pr_work.task.BaiduTask           : BaiduTask:删除上传失败的文档
+2025-02-22 14:05:40.491  INFO 61549 --- [scheduling-1] com.org.pr_work.task.BaiduTask           : {"num":4631,"name":"全部","class":-1}
+2025-02-22 15:05:40.571  INFO 61549 --- [scheduling-1] com.org.pr_work.task.BaiduTask           : {"num":4632,"name":"全部","class":-1}
+2025-02-22 16:05:40.649  INFO 61549 --- [scheduling-1] com.org.pr_work.task.BaiduTask           : {"num":4652,"name":"全部","class":-1}
+2025-02-22 17:05:40.639  INFO 61549 --- [scheduling-1] com.org.pr_work.task.BaiduTask           : {"num":4659,"name":"全部","class":-1}
+2025-02-22 18:05:40.520  INFO 61549 --- [scheduling-1] com.org.pr_work.task.BaiduTask           : {"num":4662,"name":"全部","class":-1}
+2025-02-22 19:05:40.907  INFO 61549 --- [scheduling-1] com.org.pr_work.task.BaiduTask           : {"num":4664,"name":"全部","class":-1}
+2025-02-22 19:05:41.088  INFO 61549 --- [scheduling-1] com.org.pr_work.service.BDService        : query_list: i=10;status=200;
+2025-02-22 19:05:51.220  INFO 61549 --- [scheduling-1] com.org.pr_work.service.BDService        : query_list: i=9;status=200;
+2025-02-22 19:06:01.372  INFO 61549 --- [scheduling-1] com.org.pr_work.service.BDService        : query_list: i=8;status=200;
+2025-02-22 19:06:11.509  INFO 61549 --- [scheduling-1] com.org.pr_work.service.BDService        : query_list: i=7;status=200;
+2025-02-22 19:06:21.669  INFO 61549 --- [scheduling-1] com.org.pr_work.service.BDService        : query_list: i=6;status=200;
+2025-02-22 19:06:31.812  INFO 61549 --- [scheduling-1] com.org.pr_work.service.BDService        : query_list: i=5;status=200;
+2025-02-22 19:06:32.814  INFO 61549 --- [scheduling-1] com.org.pr_work.service.BDService        : 5    8.1牛顿第一定律 同步习题 2024-2025学年人教版(2024)物理八年级下册----------------------------- 14e94816baf3f90f76c66137ee06eff9aff849fc
+2025-02-22 19:06:32.996  WARN 61549 --- [scheduling-1] o.a.h.c.protocol.ResponseProcessCookies  : Invalid cookie header: "Set-Cookie: BAIDUID_BFESS=E5B08064AD35A10BC3272E389CB78FDC:FG=1; Path=/; Domain=baidu.com; Expires=Sun, 22 Feb 2026 11:06:33 GMT; Max-Age=31536000; Secure; SameSite=None". Invalid 'expires' attribute: Sun, 22 Feb 2026 11:06:33 GMT
+2025-02-22 19:06:32.997  INFO 61549 --- [scheduling-1] com.org.pr_work.service.BDService        : deleteDoc:200{"error_no":"0"}
+2025-02-22 19:06:39.004  INFO 61549 --- [scheduling-1] com.org.pr_work.service.BDService        : 5    17.2探究电动机转动的原理 2024-2025学年沪粤版物理九年级下册----------------------------- d9fb98186c1aff00bed5b9f3f90f76c660374cfc
+2025-02-22 19:06:39.182  WARN 61549 --- [scheduling-1] o.a.h.c.protocol.ResponseProcessCookies  : Invalid cookie header: "Set-Cookie: BAIDUID_BFESS=420505EED3B43E2C97A2D04DF7D5D285:FG=1; Path=/; Domain=baidu.com; Expires=Sun, 22 Feb 2026 11:06:39 GMT; Max-Age=31536000; Secure; SameSite=None". Invalid 'expires' attribute: Sun, 22 Feb 2026 11:06:39 GMT
+2025-02-22 19:06:39.183  INFO 61549 --- [scheduling-1] com.org.pr_work.service.BDService        : deleteDoc:200{"error_no":"0"}
+2025-02-22 19:06:45.197  INFO 61549 --- [scheduling-1] com.org.pr_work.service.BDService        : 5    7.5二力平衡同步训练-2024-2025学年北师大版物理八年级下学期----------------------------- ec0dd110270c844769eae009581b6bd97e19bc7d
+2025-02-22 19:06:45.381  WARN 61549 --- [scheduling-1] o.a.h.c.protocol.ResponseProcessCookies  : Invalid cookie header: "Set-Cookie: BAIDUID_BFESS=44E60A881135449DA98DAC72B4D47F5D:FG=1; Path=/; Domain=baidu.com; Expires=Sun, 22 Feb 2026 11:06:45 GMT; Max-Age=31536000; Secure; SameSite=None". Invalid 'expires' attribute: Sun, 22 Feb 2026 11:06:45 GMT
+2025-02-22 19:06:45.382  INFO 61549 --- [scheduling-1] com.org.pr_work.service.BDService        : deleteDoc:200{"error_no":"0"}
+2025-02-22 19:07:00.511  INFO 61549 --- [scheduling-1] com.org.pr_work.service.BDService        : query_list: i=4;status=200;
+2025-02-22 19:07:01.516  INFO 61549 --- [scheduling-1] com.org.pr_work.service.BDService        : 4    8.4力改变物体的运动状态 ----2024-2025学年教科版物理八年级下学期----------------------------- 8f54a7f2084c2e3f5727a5e9856a561253d3215e
+2025-02-22 19:07:01.712  WARN 61549 --- [scheduling-1] o.a.h.c.protocol.ResponseProcessCookies  : Invalid cookie header: "Set-Cookie: BAIDUID_BFESS=3F8716E6DBD8E5200F59984183251553:FG=1; Path=/; Domain=baidu.com; Expires=Sun, 22 Feb 2026 11:07:01 GMT; Max-Age=31536000; Secure; SameSite=None". Invalid 'expires' attribute: Sun, 22 Feb 2026 11:07:01 GMT
+2025-02-22 19:07:01.713  INFO 61549 --- [scheduling-1] com.org.pr_work.service.BDService        : deleteDoc:200{"error_no":"0"}
+2025-02-22 19:07:07.714  INFO 61549 --- [scheduling-1] com.org.pr_work.service.BDService        : 4    8.3摩擦力-2024-2025学年人教版八年级物理下册----------------------------- 1096b549a3116c175f0e7cd184254b35effd1a41
+2025-02-22 19:07:07.897  WARN 61549 --- [scheduling-1] o.a.h.c.protocol.ResponseProcessCookies  : Invalid cookie header: "Set-Cookie: BAIDUID_BFESS=C58FDA472F874DCE01E5F07785FBAD78:FG=1; Path=/; Domain=baidu.com; Expires=Sun, 22 Feb 2026 11:07:08 GMT; Max-Age=31536000; Secure; SameSite=None". Invalid 'expires' attribute: Sun, 22 Feb 2026 11:07:08 GMT
+2025-02-22 19:07:07.898  INFO 61549 --- [scheduling-1] com.org.pr_work.service.BDService        : deleteDoc:200{"error_no":"0"}
+2025-02-22 19:07:23.049  INFO 61549 --- [scheduling-1] com.org.pr_work.service.BDService        : query_list: i=3;status=200;
+2025-02-22 19:07:24.052  INFO 61549 --- [scheduling-1] com.org.pr_work.service.BDService        : 3    9.1压强-2024-2025学年人教版八年级物理下册----------------------------- d3c91286ab956bec0975f46527d3240c8447a1a4
+2025-02-22 19:07:24.249  WARN 61549 --- [scheduling-1] o.a.h.c.protocol.ResponseProcessCookies  : Invalid cookie header: "Set-Cookie: BAIDUID_BFESS=523C85BFDF96B10845F225E5C4B7088F:FG=1; Path=/; Domain=baidu.com; Expires=Sun, 22 Feb 2026 11:07:24 GMT; Max-Age=31536000; Secure; SameSite=None". Invalid 'expires' attribute: Sun, 22 Feb 2026 11:07:24 GMT
+2025-02-22 19:07:24.250  INFO 61549 --- [scheduling-1] com.org.pr_work.service.BDService        : deleteDoc:200{"error_no":"0"}
+2025-02-22 19:07:30.264  INFO 61549 --- [scheduling-1] com.org.pr_work.service.BDService        : 3    9.3大气压强  同步习题 2024-2025学年人教版(2024)物理八年级下册----------------------------- 977819b1f76527d3240c844769eae009591ba208
+2025-02-22 19:07:30.443  WARN 61549 --- [scheduling-1] o.a.h.c.protocol.ResponseProcessCookies  : Invalid cookie header: "Set-Cookie: BAIDUID_BFESS=1E950CD51CEC9878B4B633D7197E5996:FG=1; Path=/; Domain=baidu.com; Expires=Sun, 22 Feb 2026 11:07:30 GMT; Max-Age=31536000; Secure; SameSite=None". Invalid 'expires' attribute: Sun, 22 Feb 2026 11:07:30 GMT
+2025-02-22 19:07:30.443  INFO 61549 --- [scheduling-1] com.org.pr_work.service.BDService        : deleteDoc:200{"error_no":"0"}
+2025-02-22 19:07:45.570  INFO 61549 --- [scheduling-1] com.org.pr_work.service.BDService        : query_list: i=2;status=200;
+2025-02-22 19:07:46.574  INFO 61549 --- [scheduling-1] com.org.pr_work.service.BDService        : 2    第八章运动和力同步练习----2024-2025学年人教版物理八年级下学期----------------------------- bd14e5f7598102d276a20029bd64783e08127d67
+2025-02-22 19:07:46.736  WARN 61549 --- [scheduling-1] o.a.h.c.protocol.ResponseProcessCookies  : Invalid cookie header: "Set-Cookie: BAIDUID_BFESS=C036AE6DDC48FB1C21C7B14DDB2BACB7:FG=1; Path=/; Domain=baidu.com; Expires=Sun, 22 Feb 2026 11:07:46 GMT; Max-Age=31536000; Secure; SameSite=None". Invalid 'expires' attribute: Sun, 22 Feb 2026 11:07:46 GMT
+2025-02-22 19:07:46.736  INFO 61549 --- [scheduling-1] com.org.pr_work.service.BDService        : deleteDoc:200{"error_no":"0"}
+2025-02-22 19:07:52.746  INFO 61549 --- [scheduling-1] com.org.pr_work.service.BDService        : 2    第八章运动和力同步练习----2024-2025学年人教版物理八年级下学期 ----------------------------- 746fc19ebd23482fb4daa58da0116c175e0e1e2a
+2025-02-22 19:07:52.896  WARN 61549 --- [scheduling-1] o.a.h.c.protocol.ResponseProcessCookies  : Invalid cookie header: "Set-Cookie: BAIDUID_BFESS=B4E8DD15C07E0684608F988A1FB566FF:FG=1; Path=/; Domain=baidu.com; Expires=Sun, 22 Feb 2026 11:07:53 GMT; Max-Age=31536000; Secure; SameSite=None". Invalid 'expires' attribute: Sun, 22 Feb 2026 11:07:53 GMT
+2025-02-22 19:07:52.896  INFO 61549 --- [scheduling-1] com.org.pr_work.service.BDService        : deleteDoc:200{"error_no":"0"}
+2025-02-22 19:08:08.039  INFO 61549 --- [scheduling-1] com.org.pr_work.service.BDService        : query_list: i=1;status=200;
+2025-02-22 19:08:09.048  INFO 61549 --- [scheduling-1] com.org.pr_work.service.BDService        : 1    第十一章 功和机械能 单元试卷  -2024-2025学年人教版物理八年级下册----------------------------- d344902f6194dd88d0d233d4b14e852459fb390a
+2025-02-22 19:08:09.238  WARN 61549 --- [scheduling-1] o.a.h.c.protocol.ResponseProcessCookies  : Invalid cookie header: "Set-Cookie: BAIDUID_BFESS=4B071BD7B4FA776AA20760A93D1D11BC:FG=1; Path=/; Domain=baidu.com; Expires=Sun, 22 Feb 2026 11:08:09 GMT; Max-Age=31536000; Secure; SameSite=None". Invalid 'expires' attribute: Sun, 22 Feb 2026 11:08:09 GMT
+2025-02-22 19:08:09.239  INFO 61549 --- [scheduling-1] com.org.pr_work.service.BDService        : deleteDoc:200{"error_no":"0"}
+2025-02-22 19:08:15.242  INFO 61549 --- [scheduling-1] com.org.pr_work.service.BDService        : 1    第七章力单元练习2024-2025学年人教版物理八年级下册----------------------------- a1a97fdefc00bed5b9f3f90f76c66137ef064f67
+2025-02-22 19:08:15.406  WARN 61549 --- [scheduling-1] o.a.h.c.protocol.ResponseProcessCookies  : Invalid cookie header: "Set-Cookie: BAIDUID_BFESS=C527884457AB66ABD000E8119C0DD061:FG=1; Path=/; Domain=baidu.com; Expires=Sun, 22 Feb 2026 11:08:15 GMT; Max-Age=31536000; Secure; SameSite=None". Invalid 'expires' attribute: Sun, 22 Feb 2026 11:08:15 GMT
+2025-02-22 19:08:15.407  INFO 61549 --- [scheduling-1] com.org.pr_work.service.BDService        : deleteDoc:200{"error_no":"0"}
+2025-02-22 19:08:21.424  INFO 61549 --- [scheduling-1] com.org.pr_work.service.BDService        : 1    第六章质量和密度单元检测----2024-2025学年北师大版物理八年级下册----------------------------- 7b63c3e6bfd126fff705cc1755270722182e59e1
+2025-02-22 19:08:21.617  WARN 61549 --- [scheduling-1] o.a.h.c.protocol.ResponseProcessCookies  : Invalid cookie header: "Set-Cookie: BAIDUID_BFESS=58D1FA54B62ACB59994BF6F20D0DE086:FG=1; Path=/; Domain=baidu.com; Expires=Sun, 22 Feb 2026 11:08:21 GMT; Max-Age=31536000; Secure; SameSite=None". Invalid 'expires' attribute: Sun, 22 Feb 2026 11:08:21 GMT
+2025-02-22 19:08:21.617  INFO 61549 --- [scheduling-1] com.org.pr_work.service.BDService        : deleteDoc:200{"error_no":"0"}
+2025-02-22 19:08:36.753  INFO 61549 --- [scheduling-1] com.org.pr_work.service.BDService        : query_list: i=0;status=200;
+2025-02-22 19:08:37.764  INFO 61549 --- [scheduling-1] com.org.pr_work.service.BDService        : 0    第一章 物态及其变化单元测试--2024-2025学年北师大版物理八年级上学期----------------------------- c23aada07b3e0912a21614791711cc7931b77886
+2025-02-22 19:08:37.949  WARN 61549 --- [scheduling-1] o.a.h.c.protocol.ResponseProcessCookies  : Invalid cookie header: "Set-Cookie: BAIDUID_BFESS=11A9F7D4453C7092484E14CDBFE1A296:FG=1; Path=/; Domain=baidu.com; Expires=Sun, 22 Feb 2026 11:08:38 GMT; Max-Age=31536000; Secure; SameSite=None". Invalid 'expires' attribute: Sun, 22 Feb 2026 11:08:38 GMT
+2025-02-22 19:08:37.950  INFO 61549 --- [scheduling-1] com.org.pr_work.service.BDService        : deleteDoc:200{"error_no":"0"}
+2025-02-22 19:08:43.959  INFO 61549 --- [scheduling-1] com.org.pr_work.service.BDService        : 0    第十一章 简单机械 单元练习- 2024-2025学年沪科版物理八年级全一册----------------------------- 0f0129ac021ca300a6c30c22590102020740f2a6
+2025-02-22 19:08:44.148  WARN 61549 --- [scheduling-1] o.a.h.c.protocol.ResponseProcessCookies  : Invalid cookie header: "Set-Cookie: BAIDUID_BFESS=3F3DA723435863755801DE929D961617:FG=1; Path=/; Domain=baidu.com; Expires=Sun, 22 Feb 2026 11:08:44 GMT; Max-Age=31536000; Secure; SameSite=None". Invalid 'expires' attribute: Sun, 22 Feb 2026 11:08:44 GMT
+2025-02-22 19:08:44.149  INFO 61549 --- [scheduling-1] com.org.pr_work.service.BDService        : deleteDoc:200{"error_no":"0"}
+2025-02-22 19:08:59.162  INFO 61549 --- [scheduling-1] com.org.pr_work.task.BaiduTask           : BaiduTask:删除上传失败的文档
+2025-02-22 20:05:40.692  INFO 61549 --- [scheduling-1] com.org.pr_work.task.BaiduTask           : {"num":4664,"name":"全部","class":-1}
+2025-02-22 21:05:40.788  INFO 61549 --- [scheduling-1] com.org.pr_work.task.BaiduTask           : {"num":4663,"name":"全部","class":-1}
+2025-02-22 22:05:40.757  INFO 61549 --- [scheduling-1] com.org.pr_work.task.BaiduTask           : {"num":4663,"name":"全部","class":-1}
+2025-02-22 23:05:40.888  INFO 61549 --- [scheduling-1] com.org.pr_work.task.BaiduTask           : {"num":4665,"name":"全部","class":-1}

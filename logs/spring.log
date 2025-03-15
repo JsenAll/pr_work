@@ -1,0 +1,9 @@
+2025-03-15 00:03:17.235  INFO 12372 --- [scheduling-1] com.org.pr_work.task.BaiduTask           : {"num":5097,"name":"全部","class":-1}
+2025-03-15 01:03:17.527  INFO 12372 --- [scheduling-1] com.org.pr_work.task.BaiduTask           : {"num":5097,"name":"全部","class":-1}
+2025-03-15 02:03:17.329  INFO 12372 --- [scheduling-1] com.org.pr_work.task.BaiduTask           : {"num":5096,"name":"全部","class":-1}
+2025-03-15 03:03:17.381  INFO 12372 --- [scheduling-1] com.org.pr_work.task.BaiduTask           : {"num":5097,"name":"全部","class":-1}
+2025-03-15 04:03:17.325  INFO 12372 --- [scheduling-1] com.org.pr_work.task.BaiduTask           : {"num":5097,"name":"全部","class":-1}
+2025-03-15 05:03:17.261  INFO 12372 --- [scheduling-1] com.org.pr_work.task.BaiduTask           : {"num":5095,"name":"全部","class":-1}
+2025-03-15 06:03:17.201  INFO 12372 --- [scheduling-1] com.org.pr_work.task.BaiduTask           : {"num":5096,"name":"全部","class":-1}
+2025-03-15 07:03:17.750  INFO 12372 --- [scheduling-1] com.org.pr_work.task.BaiduTask           : {"num":5095,"name":"全部","class":-1}
+2025-03-15 08:03:17.541  INFO 12372 --- [scheduling-1] com.org.pr_work.task.BaiduTask           : {"num":5095,"name":"全部","class":-1}

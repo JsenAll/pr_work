@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLV.js 播放器示例</title>
+    <style>
+        /* 简单的视频播放器样式 */
+        video {
+            width: 100%;
+            max-width: 640px;
+            margin: 20px auto;
+            display: block;
+            background: #000;
+        }
+    </style>
+</head>
+<body>
+
+<!-- 视频播放器 -->
+<video id="flvPlayer" width="640" height="360" controls></video>
+
+<!-- 引入 FLV.js 库 -->
+<script src="https://cdn.jsdelivr.net/npm/flv.js@1.5.0/dist/flv.min.js"></script>
+
+<script>
+    // 获取视频元素
+    const videoElement = document.getElementById('flvPlayer');
+
+    // FLV 文件的 URL
+    // const flvUrl = 'output.flv';  // 请替换为你的 FLV 视频文件路径
+    // 此时会存在跨域问题
+    const flvUrl = 'http://39.107.238.27:8080/output.flv';  // 请替换为你的 FLV 视频文件路径
+    // const flvUrl = 'your-video.mp4';  // 请替换为你的 FLV 视频文件路径
+
+    // 判断浏览器是否支持 FLV.js
+    if (flvjs.isSupported()) {
+        const player = flvjs.createPlayer({
+            // type: 'mp4',
+            type: 'flv',
+            url: flvUrl
+        });
+
+        // 将 FLV.js 播放器绑定到 video 元素
+        player.attachMediaElement(videoElement);
+        player.load();
+
+        // 播放视频
+        player.play().catch(error => {
+            console.error('播放失败：', error);
+        });
+    } else {
+        alert('该浏览器不支持 FLV 播放');
+    }
+</script>
+
+</body>
+</html>
