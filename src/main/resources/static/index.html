@@ -1,6 +1,93 @@
-<html>
-    <body>
-        <h1>hello word!!!</h1>
-        <p>this is a html page</p>
-    </body>
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8"></meta>
+</head>
+<body>
+<!-- Include stylesheet -->
+<link href="quill.snow.css" rel="stylesheet"/>
+<!-- Include the Quill library -->
+<script src="quill.js"></script>
+<form id="form">
+    <label for="title"></label><input type="text" id="title">
+    <!-- Create the editor container -->
+    <div id="editor">
+        <p>Hello World!</p>
+        <p>Some initial <strong>bold</strong> text</p>
+        <p><br/></p>
+    </div>
+</form>
+
+<div>
+    <input type="button" value="导出"></input>
+</div>
+<script>
+    const quill = new Quill('#editor', {
+        theme: 'snow' // 使用雪花主题初始化 Quill 富文本编辑器
+
+    });
+
+    let editorContent = quill.root.innerHTML; // 获取富文本的 HTML 内容
+
+    const editorContainer = document.querySelector('.ql-container');
+
+    // 初始调整高度
+    adjustEditorHeight();
+
+    // 监听内容变化事件
+    quill.on('text-change', function() {
+        adjustEditorHeight();
+    });
+
+    // 动态调整编辑器高度函数
+    function adjustEditorHeight() {
+        // 获取当前内容的高度
+        const height = editorContainer.scrollHeight;
+        
+        // 设置最小和最大高度限制（可选）
+        const minHeight = 100;  // 最小高度
+        const maxHeight = 500;  // 最大高度
+        
+        // 计算实际高度，不超过最大值且不低于最小值
+        const newHeight = Math.min(Math.max(height, minHeight), maxHeight);
+        
+        // 更新编辑器容器的高度
+        editorContainer.style.height = newHeight + 'px';
+    }
+
+    document.querySelector('input[type="button"]').addEventListener('click', function () {
+        // 上送表单数据
+        var form = document.getElementById('form');
+        editorContent = quill.root.innerHTML;
+        console.log(editorContent);
+        console.log(form)
+        fetch('/api/export-word', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body:  JSON.stringify({content: editorContent})
+        })
+            .then(response => {
+                if (response.ok) {
+                    return response.blob(); // 接收返回的 .docx 文件
+                }
+            })
+            .then(blob => {
+                const url = window.URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = 'document.docx';
+                a.click();
+                window.URL.revokeObjectURL(url);
+            })
+            .catch(error => console.error('导出失败:', error));
+    });
+
+
+</script>
+<!-- Initialize Quill editor -->
+
+
+</body>
 </html>

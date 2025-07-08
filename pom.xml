@@ -58,6 +58,21 @@
             <artifactId>poi-ooxml</artifactId>
             <version>5.2.3</version> <!-- 使用最新版本 -->
         </dependency>
+
+        <!-- HTML 解析 -->
+        <dependency>
+            <groupId>org.jsoup</groupId>
+            <artifactId>jsoup</artifactId>
+            <version>1.15.3</version>
+        </dependency>
+
+        <!-- 图片 IO 支持 -->
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.11.0</version>
+        </dependency>
+
     </dependencies>
     <dependencyManagement>
         <dependencies>
