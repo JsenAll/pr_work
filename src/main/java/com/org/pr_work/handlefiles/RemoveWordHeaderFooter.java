@@ -2,6 +2,7 @@ package com.org.pr_work.handlefiles;
 
 import cn.hutool.core.date.DateTime;
 import cn.hutool.core.date.DateUtil;
+import com.org.pr_work.utils.FileWriteUtil;
 import org.apache.poi.openxml4j.opc.OPCPackage;
 import org.apache.poi.xwpf.usermodel.XWPFDocument;
 import org.apache.poi.xwpf.usermodel.XWPFFooter;
@@ -90,12 +91,18 @@ public class RemoveWordHeaderFooter {
         }
 
         // 处理当前目录下的所有 .docx 文件
-        File[] files = folder.listFiles((dir, name) -> name.endsWith(".docx"));
-        if (files != null) {
-            for (File file : files) {
-                System.out.println("Processing file: " + file.getName());
-                removeHeaderFooter(file.getAbsolutePath());
-            }
+//        File[] files = folder.listFiles((dir, name) -> name.endsWith(".docx"));
+//        if (files != null) {
+//            for (File file : files) {
+//                System.out.println("Processing file: " + file.getName());
+//                removeHeaderFooter(file.getAbsolutePath());
+//            }
+//        }
+        File[] pptFiles = folder.listFiles((dir, name) -> name.endsWith(".pptx"));
+        assert pptFiles != null;
+        for (File pptFile : pptFiles) {
+            System.out.println("Processing file: " + pptFile.getName());
+            FileWriteUtil.copyFile(pptFile.getAbsolutePath(),OUTPUT_DIR + File.separator + DateUtil.format(new DateTime(), "yyyyMMdd") + File.separator +"ppt" + File.separator +pptFile.getName());
         }
 
         // 递归处理子目录
@@ -109,7 +116,7 @@ public class RemoveWordHeaderFooter {
 
 
     public static void main(String[] args) {
-        String directoryPath = "C:\\Users\\JHS\\Desktop\\学科网资料2025051901(23)份"; // 替换为你的文件夹路径
+        String directoryPath = "/Users/xiaosen/Downloads/2025-2026学年上学期备课"; // 替换为你的文件夹路径
 //        String directoryPath = "D:\\OneDrive\\学科网资料2025051302(4)份"; // 替换为你的文件夹路径
         try {
             processDirectory(directoryPath);
