@@ -50,19 +50,15 @@ public class RemoveWordHeaderFooter {
             }
         }
 
-        if ("".equals(flag)) {
-            System.out.println("没有找到页眉或页脚");
-            return;
-        }
 
+        String outPutFilePathOne = OUTPUT_DIR + File.separator + DateUtil.format(new DateTime(), "yyyyMMdd")+ File.separator +"word";
 
-        // 构建输出文件路径：保持原文件名
-        String outputFilePath = OUTPUT_DIR + File.separator + DateUtil.format(new DateTime(), "yyyyMMdd") + File.separator + file.getName();
-
-        File outputDir = new File(OUTPUT_DIR + File.separator + DateUtil.format(new DateTime(), "yyyyMMdd"));
+        File outputDir = new File(outPutFilePathOne);
         if (!outputDir.exists()) {
             outputDir.mkdirs(); // 自动创建输出目录
         }
+        // 构建输出文件路径：保持原文件名
+        String outputFilePath = outPutFilePathOne + File.separator + file.getName();
         FileOutputStream out = new FileOutputStream(outputFilePath);
         // 保存为新文件
         try {
@@ -91,13 +87,15 @@ public class RemoveWordHeaderFooter {
         }
 
         // 处理当前目录下的所有 .docx 文件
-//        File[] files = folder.listFiles((dir, name) -> name.endsWith(".docx"));
-//        if (files != null) {
-//            for (File file : files) {
-//                System.out.println("Processing file: " + file.getName());
-//                removeHeaderFooter(file.getAbsolutePath());
-//            }
-//        }
+        File[] files = folder.listFiles((dir, name) -> name.endsWith(".docx"));
+        if (files != null) {
+            for (File file : files) {
+                System.out.println("Processing file: " + file.getName());
+                removeHeaderFooter(file.getAbsolutePath());
+            }
+        }
+
+        // 处理当前目录下的所有 .pptx 文件
         File[] pptFiles = folder.listFiles((dir, name) -> name.endsWith(".pptx"));
         assert pptFiles != null;
         for (File pptFile : pptFiles) {
@@ -116,7 +114,7 @@ public class RemoveWordHeaderFooter {
 
 
     public static void main(String[] args) {
-        String directoryPath = "/Users/xiaosen/Downloads/2025-2026学年上学期备课"; // 替换为你的文件夹路径
+        String directoryPath = "/Users/xiaosen/Downloads/学科网下载资料-2 6"; // 替换为你的文件夹路径
 //        String directoryPath = "D:\\OneDrive\\学科网资料2025051302(4)份"; // 替换为你的文件夹路径
         try {
             processDirectory(directoryPath);
