@@ -25,6 +25,19 @@ public class RemoveWordHeaderFooter {
     public static void removeHeaderFooter(String filePath) throws Exception {
         // 创建File对象
         File file = new File(filePath);
+        
+        // 检查文件是否存在且不是目录
+        if (!file.exists() || file.isDirectory()) {
+            System.out.println("Skipping invalid file path: " + filePath);
+            return;
+        }
+        
+        // 确保是.docx文件
+        if (!filePath.endsWith(".docx")) {
+            System.out.println("Skipping non-docx file: " + filePath);
+            return;
+        }
+        
         // 打开文档包装器
         OPCPackage opcPackage = OPCPackage.open(file.getAbsolutePath());
         // 创建文档对象
@@ -114,7 +127,7 @@ public class RemoveWordHeaderFooter {
 
 
     public static void main(String[] args) {
-        String directoryPath = "/Users/xiaosen/Downloads/学科网下载资料-2 6"; // 替换为你的文件夹路径
+        String directoryPath = "/Users/xiaosen/Downloads/学科网下载资料-1 4"; // 替换为你的文件夹路径
 //        String directoryPath = "D:\\OneDrive\\学科网资料2025051302(4)份"; // 替换为你的文件夹路径
         try {
             processDirectory(directoryPath);

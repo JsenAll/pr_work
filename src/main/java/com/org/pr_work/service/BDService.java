@@ -37,13 +37,34 @@ public class BDService {
      * @param pageNum 页码
      * @return 查询列表接口响应
      */
-    private HttpResponse<String> queryList(int pageNum) {
-        // 付费 文档列表
-//        String url = "https://cuttlefish.baidu.com/nshop/doc/getlist?sub_tab=2&pn= " + pageNum + "&rn=10&query=&doc_id_str=&time_range=&buyout_show_type=1&needDayUploadUserCount=1";
+    private HttpResponse<String> queryVipDocList(int pageNum) {
         // vip 文档列表
-        String url= "https://cuttlefish.baidu.com/nshop/doc/getlist?sub_tab=1&pn=" + pageNum + "&rn=10&query=&doc_id_str=&time_range=&buyout_show_type=1&needDayUploadUserCount=1";
-        HttpResponse<String> response = Unirest.get(url).header("Accept", " application/json, text/plain, */*").header("Accept-Language", " zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6").header("Cache-Control", " no-cache, no-store").header("Connection", " keep-alive").header("Host", " cuttlefish.baidu.com").header("Pragma", " no-cache").header("Referer", " https://cuttlefish.baidu.com/shopmis?_wkts_=1725442131889").header("Sec-Fetch-Dest", " empty").header("Sec-Fetch-Mode", " cors").header("Sec-Fetch-Site", " same-origin").header("User-Agent", " Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 Edg/128.0.0.0").header("sec-ch-ua", " \"Chromium\";v=\"128\", \"Not;A=Brand\";v=\"24\", \"Microsoft Edge\";v=\"128\"").header("sec-ch-ua-mobile", " ?0").header("sec-ch-ua-platform", " \"Windows\"").header("Cookie", "BAIDUID=AFA5469909B591180C6EBE5A70DDB649:FG=1; BAIDUID_BFESS=AFA5469909B591180C6EBE5A70DDB649:FG=1; __bid_n=1930e0cfa4392166e06596; BDUSS=WJyVFZBUDhjZjd5V1NVS3ZrTVZaRUY3VmVnRFltK2k1WE9qbjYwbUxyS2pOWFZuQUFBQUFBPT0AAAAAAAAAAInMuSDPvLkWzrHXsMTjtcTDwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKOoTWfKmdBMZ; BDUSS_BFESS=WJyVFZBUDhjZjd5V1NVS3ZrTVZaRUY3VmVnRFltK2k1WE9qbjYwbUxyS2pOWFZuQUFBQUFBPT0AAAAAAAAAAInMuSDPvLkWzrHXsMTjtcTDwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKOoTWfKmdBMZ; passRefreshTk=CNNFqDKyhW8jeFy69Fad8dd6kqIhtDWAkxS9N2uTgEmjDsQOeFEAIvq4%2BTS9cLevFB70L7AA%2Bedl7xjCQaYgJWWrfQTtH85JaoaDfnDEHdYgNBD3A9eNLVRYazN%2F41NUtruYZlXBbzHJdbgmMzHmrrvceNx0SR1djzSbUiyyeFdXfdotokYcFfF7BFcgG36q; ab_sr=1.0.1_NGNkMjYyNzk5NWVkMzBlMDcyOWEwZjViOWU0YmYyNDBmZDk3Y2I4OTVkMjk5YzJjNmU4ZjVmMGYzMjkwNzRjODZmZDhhODI5ZDcyZTVkNjgyY2M4ZDE5NTNhYjViMDRiNTkxZjFjZWJkODU2YTM4MjdhMzUwZDYyYmI4MmZmNjQ5NTMxNGE2YzBkZjE4NjdmY2U3NmM1YmU3OTBhOTZmZWY3M2ExYjM2YjQyNDRmYmE5OTkxMjk3YWQzYWJlZjc3").asString();
-        return response;
+        String url = "https://cuttlefish.baidu.com/nshop/doc/getlist?sub_tab=1&pn=" + pageNum + "&rn=10&query=&doc_id_str=&time_range=&buyout_show_type=1&needDayUploadUserCount=1";
+        return getStringHttpResponse(url);
+    }
+
+
+    /**
+     * 查询付费文档列表接口
+     *
+     * @param pageNum 页码
+     * @return 查询列表接口响应
+     */
+    private HttpResponse<String> queryPayDocList(int pageNum) {
+        // 付费 文档列表
+        String url = "https://cuttlefish.baidu.com/nshop/doc/getlist?sub_tab=2&pn= " + pageNum + "&rn=10&query=&doc_id_str=&time_range=&buyout_show_type=1&needDayUploadUserCount=1";
+        return getStringHttpResponse(url);
+    }
+
+    /**
+     * 发送GET请求获取字符串响应
+     * 该方法构造带有完整请求头的GET请求，包括认证信息和浏览器标识
+     *
+     * @param url 请求地址
+     * @return HTTP响应，包含响应状态和内容
+     */
+    private HttpResponse<String> getStringHttpResponse(String url) {
+        return Unirest.get(url).header("Accept", " application/json, text/plain, */*").header("Accept-Language", " zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6").header("Cache-Control", " no-cache, no-store").header("Connection", " keep-alive").header("Host", " cuttlefish.baidu.com").header("Pragma", " no-cache").header("Referer", " https://cuttlefish.baidu.com/shopmis?_wkts_=1725442131889").header("Sec-Fetch-Dest", " empty").header("Sec-Fetch-Mode", " cors").header("Sec-Fetch-Site", " same-origin").header("User-Agent", " Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 Edg/128.0.0.0").header("sec-ch-ua", " \"Chromium\";v=\"128\", \"Not;A=Brand\";v=\"24\", \"Microsoft Edge\";v=\"128\"").header("sec-ch-ua-mobile", " ?0").header("sec-ch-ua-platform", " \"Windows\"").header("Cookie", "BAIDUID=AFA5469909B591180C6EBE5A70DDB649:FG=1; BAIDUID_BFESS=AFA5469909B591180C6EBE5A70DDB649:FG=1; __bid_n=1930e0cfa4392166e06596; BDUSS=WJyVFZBUDhjZjd5V1NVS3ZrTVZaRUY3VmVnRFltK2k1WE9qbjYwbUxyS2pOWFZuQUFBQUFBPT0AAAAAAAAAAInMuSDPvLkWzrHXsMTjtcTDwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKOoTWfKmdBMZ; BDUSS_BFESS=WJyVFZBUDhjZjd5V1NVS3ZrTVZaRUY3VmVnRFltK2k1WE9qbjYwbUxyS2pOWFZuQUFBQUFBPT0AAAAAAAAAAInMuSDPvLkWzrHXsMTjtcTDwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKOoTWfKmdBMZ; passRefreshTk=CNNFqDKyhW8jeFy69Fad8dd6kqIhtDWAkxS9N2uTgEmjDsQOeFEAIvq4%2BTS9cLevFB70L7AA%2Bedl7xjCQaYgJWWrfQTtH85JaoaDfnDEHdYgNBD3A9eNLVRYazN%2F41NUtruYZlXBbzHJdbgmMzHmrrvceNx0SR1djzSbUiyyeFdXfdotokYcFfF7BFcgG36q; ab_sr=1.0.1_NGNkMjYyNzk5NWVkMzBlMDcyOWEwZjViOWU0YmYyNDBmZDk3Y2I4OTVkMjk5YzJjNmU4ZjVmMGYzMjkwNzRjODZmZDhhODI5ZDcyZTVkNjgyY2M4ZDE5NTNhYjViMDRiNTkxZjFjZWJkODU2YTM4MjdhMzUwZDYyYmI4MmZmNjQ5NTMxNGE2YzBkZjE4NjdmY2U3NmM1YmU3OTBhOTZmZWY3M2ExYjM2YjQyNDRmYmE5OTkxMjk3YWQzYWJlZjc3").asString();
     }
 
     /**
@@ -75,13 +96,11 @@ public class BDService {
      * 开始删除不合规的文档
      *
      * @param pageNum 页码
-     * @return 响应
      */
     public void startDelDoc(int pageNum) throws InterruptedException {
-        // 循环获取 100 页数据
         for (int i = pageNum; i >= 0; i--) {
 
-            HttpResponse<String> response = queryList(i);
+            HttpResponse<String> response = queryVipDocList(i);
 
             int status = response.getStatus();
             log.info("query_list: i={};status={};", i, status);

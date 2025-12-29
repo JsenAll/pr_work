@@ -40,7 +40,7 @@ public class BDController {
             @Override
             public void run() {
                 try {
-                    bdService.startDelDoc(100);
+                    bdService.startDelDoc(20);
                     log.info("删除完成");
                 } catch (InterruptedException e) {
                     e.printStackTrace();
